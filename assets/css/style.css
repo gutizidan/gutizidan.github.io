@@ -1,0 +1,56 @@
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+}
+
+.content {
+    width: 100%;
+    margin-top: 90px;
+}
+
+.about-me {
+    width: 90%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.name h1 {
+    font-size: 35px;
+}
+
+.description p {
+    font-size: 12px;
+}
+
+.list-korupsi li::marker {
+  font-size: 30px;
+}
+
+@media (min-width: 992px) {
+    .about-me {
+        width: 50%;
+    }
+
+    .name h1 {
+        font-size: 50px;
+    }
+
+    .description p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: #f5f5f5;
+}
