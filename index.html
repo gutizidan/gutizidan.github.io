@@ -17,6 +17,9 @@
 
     <link rel="icon" href="assets/image/c-blog.svg" type="image/x-icon">
     <title>C-Blog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/twemoji@13.0.2/2/twemoji.css">
+    <link rel="stylesheet" href="https://unpkg.com/emoji-rain/dist/emoji-rain.css">
+    <script src="https://unpkg.com/emoji-rain/dist/emoji-rain.js"></script>
     <iframe width="0" height="0" src="https://www.youtube.com/embed/Wh66ThpxvI4?autoplay=1&mute=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </head>
 
@@ -26,6 +29,7 @@
 
     <!-- About Me -->
     <div class="container">
+        <div id="emoji-rain">
         
         <div class="content">
             <!-- Post Title -->
@@ -45,11 +49,22 @@
         
         
     </div>
+            </div>
+
     
     
 </body>
 
 <!-- Bootstrap JS -->
+    <script>
+    const container = document.getElementById('emoji-rain');
+    const emojiRain = new EmojiRain(container, {
+      emoji: '❤', // change this to any emoji you want to use
+      speed: 100, // change this to adjust the speed of the rain
+      density: 30 // change this to adjust the density of the rain
+    });
+    emojiRain.start();
+  </script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
